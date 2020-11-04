@@ -4,7 +4,7 @@ Content Based Image Retrival using Encoder Decoder, my program accepts an input 
 
 In my approach, instead of compressing and reconstructing the same image using encoder-decoder, I have used denoising encoder-decoder to learn a bit more about the images to extract better features from the model, I have used salt and pepper noise for this.
 
-I have tried different encoder-decoder with different architectures and found denoising encoder-decoder the best one (in terms of image reconstruction loss for both validation and train data). I can also try to extract invariant features using SimClr or can try context encoder, but as these approaches require heavy computational systems, I wasn’t able to try them.
+I have tried different encoder-decoder with different architectures and found denoising encoder-decoder the best one (in terms of image reconstruction loss for both validation and train data). I can also try to extract invariant features using SimClr or can try context encoder, but as these approaches require heavy computational systems, I wasnâ€™t able to try them.
 
 ---
 
@@ -14,7 +14,7 @@ Dataset which I have used can be found [here](https://drive.google.com/file/d/1V
 
 ### Files/Notebooks:
 	train_model.ipynb             : In this notebook, I have trained the denoising encoder-decoder and at the last saved it.
-	get_and_save_features.ipynb   : In this notebook, I have saved the extracted features of images present in the given dataset, along with their image index, for example. for image -> ‘120.jpg’, the image index will be 120 in data_map_salt_and_pepper.pickle
+	get_and_save_features.ipynb   : In this notebook, I have saved the extracted features of images present in the given dataset, along with their image index, for example. for image -> â€˜120.jpgâ€™, the image index will be 120 in data_map_salt_and_pepper.pickle
 	quering_an_image.ipynb        : This notebook, return N images from the provided dataset similar to the input query image.
 	utils.py                      : it has an image preprocessing function which is used in all 3 notebooks.
 
@@ -24,7 +24,7 @@ I have also attached the trained model and data_map_salt_and_pepper.pickle, if a
 
 ### Example:
 
-	![](example.png)
+![](example.png)
 
 ---
 
@@ -33,4 +33,4 @@ I have also attached the trained model and data_map_salt_and_pepper.pickle, if a
 
 ---
 
-I have also tried to do clustering by finding the optimal number of clusters by comparing silhouette scores for different values of the number of clusters, but the result which I was getting doesn’t seem good.
+I have also tried to do clustering by finding the optimal number of clusters by comparing silhouette scores for different values of the number of clusters, but the result which I was getting doesnâ€™t seem good.
